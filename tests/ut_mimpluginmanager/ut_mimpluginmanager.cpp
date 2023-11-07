@@ -11,7 +11,7 @@
 #include "core-utils.h"
 
 #include <QProcess>
-#include <QRegExp>
+#include <QRegularExpression>
 #include <QCoreApplication>
 #include <QPointer>
 #include <QTimer>

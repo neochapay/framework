@@ -624,7 +624,8 @@ void MInputContext::onInvokeAction(const QString &action, const QKeySequence &se
         const int modifiers = sequence[i] & AllModifiers;
         QString text("");
         if (modifiers == Qt::NoModifier || modifiers == Qt::ShiftModifier) {
-            text = QString(key);
+            qWarning() << "Need to check" << Q_FUNC_INFO;
+            text = QString::number(key);
         }
         keyEvent(QEvent::KeyPress, key, modifiers, text, false, 1);
         keyEvent(QEvent::KeyRelease, key, modifiers, text, false, 1);

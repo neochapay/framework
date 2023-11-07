@@ -20,3 +20,4 @@ gen_*
 *.md5
 .idea
 build
+CMakeLists.txt.user

@@ -17,7 +17,6 @@
 
 #include <QDebug>
 #include <QApplication>
-#include <QDesktopWidget>
 #include <QKeyEvent>
 
 namespace {
@@ -81,7 +80,7 @@ void OverrideInputMethod::show()
     }
 
     // Set size of the input method
-    const QSize &screenSize = QApplication::desktop()->screenGeometry().size();
+    const QSize &screenSize = QGuiApplication::primaryScreen()->geometry().size();
     const QSize size(screenSize.width() - 200, 200);
 
     surface->setGeometry(QRect(QPoint((screenSize.width() - size.width()) / 2,

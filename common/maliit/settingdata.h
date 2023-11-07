@@ -13,7 +13,6 @@
 #define MALIIT_SETTINGDATA_H
 
 #include <maliit/namespace.h>
-
 #include <QString>
 #include <QVariant>
 #include <QList>

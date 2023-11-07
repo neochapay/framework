@@ -17,7 +17,7 @@
 
 #include <QDebug>
 #include <QApplication>
-#include <QDesktopWidget>
+#include <QScreen>
 
 namespace {
 
@@ -89,7 +89,7 @@ void HelloWorldInputMethod::show()
     }
 
     // Set size of our container to screen size
-    const QSize screenSize = QApplication::desktop()->screenGeometry().size();
+    const QSize screenSize = QGuiApplication::primaryScreen()->geometry().size();
     mainWidget->parentWidget()->resize(screenSize);
 
     // Set size of the input method

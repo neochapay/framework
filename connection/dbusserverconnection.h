@@ -14,6 +14,7 @@
 #ifndef DBUSSERVERCONNECTION_H
 #define DBUSSERVERCONNECTION_H
 
+#include <maliit/settingdata.h>
 #include "mimserverconnection.h"
 
 #include "inputcontextdbusaddress.h"

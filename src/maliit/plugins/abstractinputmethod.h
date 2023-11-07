@@ -21,6 +21,8 @@
 
 #include <maliit/namespace.h>
 
+Q_MOC_INCLUDE(<quick/keyoverridequick.h>)
+
 QT_BEGIN_NAMESPACE
 class QRegion;
 class QPoint;

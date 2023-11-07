@@ -23,10 +23,13 @@ QT_BEGIN_NAMESPACE
 class QKeyEvent;
 QT_END_NAMESPACE
 
+Q_MOC_INCLUDE(<maliit/settingdata.h>)
+
 class MInputContextConnectionPrivate;
 class MAbstractInputMethod;
 class MAttributeExtensionId;
 class MImPluginSettingsInfo;
+
 
 /*! \internal
  * \ingroup maliitserver
